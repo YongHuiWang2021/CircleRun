@@ -1,0 +1,191 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.XD.Client"
+4    android:installLocation="preferExternal"
+5    android:versionCode="1"
+6    android:versionName="0.1" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="22"
+9-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="30" />
+10-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml
+11
+12    <supports-screens
+12-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:3:3-163
+13        android:anyDensity="true"
+13-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:3:135-160
+14        android:largeScreens="true"
+14-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:3:78-105
+15        android:normalScreens="true"
+15-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:3:49-77
+16        android:smallScreens="true"
+16-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:3:21-48
+17        android:xlargeScreens="true" />
+17-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:3:106-134
+18
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:7:3-77
+19-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:7:20-74
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:8:3-65
+20-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:8:20-62
+21
+22    <uses-feature android:glEsVersion="0x00030000" />
+22-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:12:5-54
+22-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:12:19-51
+23    <uses-feature
+23-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:13:5-15:36
+24        android:name="android.hardware.vulkan.version"
+24-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:14:9-55
+25        android:required="false" />
+25-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:15:9-33
+26    <uses-feature
+26-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:19:5-21:36
+27        android:name="android.hardware.touchscreen"
+27-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:20:9-52
+28        android:required="false" />
+28-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:21:9-33
+29    <uses-feature
+29-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:22:5-24:36
+30        android:name="android.hardware.touchscreen.multitouch"
+30-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:23:9-63
+31        android:required="false" />
+31-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:24:9-33
+32    <uses-feature
+32-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:25:5-27:36
+33        android:name="android.hardware.touchscreen.multitouch.distinct"
+33-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:26:9-72
+34        android:required="false" />
+34-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:27:9-33
+35
+36    <application
+36-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:4:3-6:17
+37        android:extractNativeLibs="true"
+37-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:29:18-50
+38        android:icon="@mipmap/app_icon"
+38-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:4:49-80
+39        android:label="@string/app_name" >
+39-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:4:16-48
+40        <meta-data
+40-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:5:5-65
+41            android:name="unity.builder"
+41-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:5:16-44
+42            android:value="\" />
+42-->/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/AndroidManifest.xml:5:45-62
+43
+44        <activity
+44-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:30:9-50:20
+45            android:name="com.unity3d.player.UnityPlayerActivity"
+45-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:31:13-66
+46            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+46-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:32:13-194
+47            android:hardwareAccelerated="false"
+47-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:33:13-48
+48            android:launchMode="singleTask"
+48-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:34:13-44
+49            android:resizeableActivity="false"
+49-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:35:13-47
+50            android:screenOrientation="fullSensor"
+50-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:36:13-51
+51            android:theme="@style/UnityThemeSelector" >
+51-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:37:13-54
+52            <intent-filter>
+52-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:38:13-42:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:39:17-69
+53-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:39:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:41:17-77
+55-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:41:27-74
+56            </intent-filter>
+57
+58            <meta-data
+58-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:44:13-46:40
+59                android:name="unityplayer.UnityActivity"
+59-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:45:17-57
+60                android:value="true" />
+60-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:46:17-37
+61            <meta-data
+61-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:47:13-49:40
+62                android:name="android.notch_support"
+62-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:48:17-53
+63                android:value="true" />
+63-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:49:17-37
+64        </activity>
+65
+66        <meta-data
+66-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:52:9-54:33
+67            android:name="unity.splash-mode"
+67-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:53:13-45
+68            android:value="0" />
+68-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:54:13-30
+69        <meta-data
+69-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:55:9-57:36
+70            android:name="unity.splash-enable"
+70-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:56:13-47
+71            android:value="True" />
+71-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:57:13-33
+72        <meta-data
+72-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:58:9-60:36
+73            android:name="unity.launch-fullscreen"
+73-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:59:13-51
+74            android:value="True" />
+74-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:60:13-33
+75        <meta-data
+75-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:61:9-63:37
+76            android:name="unity.allow-resizable-window"
+76-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:62:13-56
+77            android:value="False" />
+77-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:63:13-34
+78        <meta-data
+78-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:64:9-66:50
+79            android:name="notch.config"
+79-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:65:13-40
+80            android:value="portrait|landscape" />
+80-->[:unityLibrary] /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:66:13-47
+81
+82        <activity
+82-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:13:9-17:74
+83            android:name="com.unity3d.services.ads.adunit.AdUnitActivity"
+83-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:14:13-74
+84            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+84-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:15:13-170
+85            android:hardwareAccelerated="true"
+85-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:16:13-47
+86            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+86-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:17:13-71
+87        <activity
+87-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:18:9-22:86
+88            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity"
+88-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:19:13-85
+89            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+89-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:20:13-170
+90            android:hardwareAccelerated="true"
+90-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:21:13-47
+91            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+91-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:22:13-83
+92        <activity
+92-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:23:9-27:86
+93            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity"
+93-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:24:13-93
+94            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+94-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:25:13-170
+95            android:hardwareAccelerated="false"
+95-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:26:13-48
+96            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+96-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:27:13-83
+97        <activity
+97-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:28:9-32:74
+98            android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity"
+98-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:29:13-82
+99            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+99-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:30:13-170
+100            android:hardwareAccelerated="false"
+100-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:31:13-48
+101            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+101-->[:UnityAds:] /Users/mac/.gradle/caches/transforms-2/files-2.1/b1118aa3f79366e0497e6617d8a6b855/UnityAds/AndroidManifest.xml:32:13-71
+102    </application>
+103
+104</manifest>

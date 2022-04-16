@@ -1,0 +1,4 @@
+#Sat Apr 16 23:14:05 CST 2022
+base.0=/Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
