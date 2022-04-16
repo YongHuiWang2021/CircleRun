@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using Plugins.Package.LogWriterToLocal;
 using Plugins.Scripts.XDGlobal;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
+using XD.XDLog;
 
 public class ProjectBuildHelper : Editor
 {

@@ -1,10 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using Plugins.Package.LogWriterToLocal;
+using Plugins.Common.GameConfig;
+
 using UnityEditor;
 using UnityEditor.Android;
 using UnityEngine;
+using XD.Core;
+using XD.Scripts;
+using XD.XDLog;
 
 namespace _Game._Shared.Editor.ProjectBuild
 {
@@ -53,12 +57,6 @@ namespace _Game._Shared.Editor.ProjectBuild
             SetKeyStorePram();
             Build(false);
         }
-       
-
-        public static void LoadClikZip()
-        {
-           
-        }
 
         public   static void BeginBuild()
         {
@@ -66,9 +64,8 @@ namespace _Game._Shared.Editor.ProjectBuild
             if (EditorUserBuildSettings.activeBuildTarget!= BuildTarget.Android)
                 return;
      
-
-            string APKName = "Circle_" + DateTime.Now.Year + "_" + DateTime.Now.Month + "_" + DateTime.Now.Day +
-                             "_" + DateTime.Now.Hour + "_" + DateTime.Now.Minute + "_" + DateTime.Now.Second;
+            string APKName =PlayerSettings.productName+  "_" + DateTime.Now.Month + "_" + DateTime.Now.Day +
+                             "_" + DateTime.Now.Hour + "_" + DateTime.Now.Minute+ "_"  + GameConfig.GameIDs[GameConfig.UsingProductIdx];
             string path = Application.dataPath.Replace("Assets", "AndroidPackage") +"/" +APKName;
             if (EditorUserBuildSettings.buildAppBundle)
             { 
@@ -104,6 +101,21 @@ namespace _Game._Shared.Editor.ProjectBuild
             SetKeystore();
             AssetDatabase.Refresh();
         }
-
+        [MenuItem("XD/BuidlPackage/ChangeProductParams")]
+        public static void SetProductName()
+        {
+            PlayerSettings.companyName = "XD";
+            PlayerSettings.productName =GameConfig.ProductNams[GameConfig.UsingProductIdx];
+            
+   
+            string path ="Assets/XD/Resources/AssetsData/SystemParam.asset";
+            SystemParam ppp= AssetDatabase.LoadAssetAtPath<SystemParam>(path);
+     
+            ppp.SetAndroidGameID(GameConfig.GameIDs[GameConfig.UsingProductIdx].SafeToInt32());
+            SystemParam TempData = ppp.Clone();
+            AssetDatabase.DeleteAsset(path);
+            AssetDatabase.CreateAsset(TempData, path);
+            AssetDatabase.Refresh();
+        }
     }
 }

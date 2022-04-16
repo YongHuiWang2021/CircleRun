@@ -19,10 +19,8 @@ namespace XD.Scripts
             }
         }
         public Color GameColor = Color.red;
-        public  int GameLenght = 1;
         public float Damp = 2.0f;
         public float MoveSpeed = 5.0f;
-        public float SpeedPrama = 1.0f;
         [SerializeField] GameObject[] _Guanka = null;
         public  Color LineColor;
         public GameObject GetGuanKa(int Idex)
@@ -35,9 +33,15 @@ namespace XD.Scripts
             
             return _Guanka.Length;
         }
-
+        
+        
         [SerializeField] private int _UnityADSAndroidGameID;
         [SerializeField] private int _UnityADSIOSGameID;
+
+        public void SetAndroidGameID(int id)
+        {
+            _UnityADSAndroidGameID = id;
+        }
 
         public int UnityADSGameID
         {
@@ -50,6 +54,21 @@ namespace XD.Scripts
 #endif
                 return _UnityADSAndroidGameID;
             }
+            
+        }
+
+        public SystemParam Clone()
+        {
+           return new SystemParam()
+           {
+               GameColor = this.GameColor,
+               Damp = this.Damp,
+               MoveSpeed = this.MoveSpeed,
+               _Guanka = this._Guanka,
+               LineColor = this.LineColor,
+               _UnityADSIOSGameID = this._UnityADSIOSGameID,
+               _UnityADSAndroidGameID = this._UnityADSAndroidGameID,
+           };
         }
     }
 }

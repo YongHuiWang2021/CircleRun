@@ -13,10 +13,8 @@ MonoBehaviour:
   m_Name: SystemParam
   m_EditorClassIdentifier: 
   GameColor: {r: 1, g: 1, b: 1, a: 1}
-  GameLenght: 1
   Damp: 2
   MoveSpeed: 5
-  SpeedPrama: 1
   _Guanka:
   - {fileID: 159714, guid: 3ec9a0bc51c786441abc7a0d61c2d8f6, type: 3}
   - {fileID: 174688, guid: e9fb8724ff392d940aee5f505621169c, type: 3}
@@ -28,5 +26,5 @@ MonoBehaviour:
   - {fileID: 136880, guid: 1dbeaec28ae791440825d5c885870fc0, type: 3}
   - {fileID: 148484, guid: 4604a00f93b19384bb0b26ed092edd39, type: 3}
   LineColor: {r: 1, g: 1, b: 1, a: 1}
-  _UnityADSAndroidGameID: 4637737
+  _UnityADSAndroidGameID: 4706478
   _UnityADSIOSGameID: 4637736
