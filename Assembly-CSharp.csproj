@@ -57,6 +57,7 @@
      <Compile Include="Assets/XD/Game/ADS/RV/GoogleADS/GoogleRVAdItem.cs" />
      <Compile Include="Assets/XD/Game/Common/Utility/AnimationUtil.cs" />
      <Compile Include="Assets/XD/Game/Common/Utility/MathUtil.cs" />
+     <Compile Include="Assets/XD/Game/Common/XDLog/XDDebugListener.cs" />
      <Compile Include="Assets/XD/Game/ADS/RV/UnityADS/UnityAdsInterstitialItem.cs" />
      <Compile Include="Assets/XD/Game/Common/UnityLitJson/Platform.cs" />
      <Compile Include="Assets/XD/Game/Common/Extension/AnimationExtensions.cs" />
@@ -81,10 +82,13 @@
      <Compile Include="Assets/XD/Game/Common/UnityLitJson/Lexer.cs" />
      <Compile Include="Assets/XD/Game/Common/UnityLitJson/JsonWriter.cs" />
      <Compile Include="Assets/XD/Game/Common/Extension/EnumExtensions.cs" />
+     <Compile Include="Assets/XD/Game/ADS/Data/ADSSystemData.cs" />
      <Compile Include="Assets/XD/Scripts/CircleMovement.cs" />
+     <Compile Include="Assets/XD/Game/Common/XDLog/XDDebug.cs" />
      <Compile Include="Assets/XD/Game/ADS/RV/GoogleADS/GoogleInterAdItem.cs" />
      <Compile Include="Assets/XD/Game/ADS/RV/UnityADS/UnityADSManager.cs" />
      <Compile Include="Assets/XD/Game/Common/UnityLitJson/JsonException.cs" />
+     <Compile Include="Assets/XD/Game/Common/XDLog/ColorHelper.cs" />
      <Compile Include="Assets/XD/Game/Common/RenderGame/ShowNetImage.cs" />
      <Compile Include="Assets/XD/Game/Common/Extension/RigidbodyExtensions.cs" />
      <Compile Include="Assets/XD/Game/ADS/RV/GoogleADS/GoogleADS.cs" />
@@ -96,10 +100,6 @@
      <Compile Include="Assets/XD/Game/Common/Tools/CCrandom.cs" />
      <Compile Include="Assets/XD/Game/Common/Extension/ComponentExtensions.cs" />
      <Compile Include="Assets/XD/Game/Common/Factory/Singleton.cs" />
-     <Compile Include="Assets/XD/Game/Common/XDLog/XDDebug.cs" />
-     <Compile Include="Assets/XD/Game/Common/XDLog/ColorHelper.cs" />
-     <Compile Include="Assets/XD/Game/Common/XDLog/XDDebugListener.cs" />
-     <Compile Include="Assets/XD/Game/ADS/Data/ADSSystemData.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
