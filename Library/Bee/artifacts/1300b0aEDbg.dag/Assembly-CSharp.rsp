@@ -418,6 +418,7 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.Advertisements.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.Monetization.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.UI.ref.dll"
+"Assets/XD/ADS/XDLog/XDDebugListener.cs"
 "Assets/XD/Game/ADS/Data/ADSSystemData.cs"
 "Assets/XD/Game/ADS/RV/ADSItem.cs"
 "Assets/XD/Game/ADS/RV/GameRVManager.cs"
