@@ -18,6 +18,7 @@ namespace XD.Scripts.RV.ADS
 
         protected virtual void InitializeAds()
         {
+            XDDebug.Log("UnityADSManager . InitializeAds");
             ADSSystemData data = Resources.Load<ADSSystemData>("ADSSystemData");
             XDDebug.Log("InitializeAds :: "+data.UnityADSGameID.ToString());
             Advertisement.Initialize(data.UnityADSGameID.ToString(),false,false,this);

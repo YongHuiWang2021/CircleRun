@@ -56,6 +56,8 @@ namespace XD.Scripts.RV.ADS
         // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:
         public void OnUnityAdsShowComplete(string adUnitId, UnityAdsShowCompletionState showCompletionState)
         {
+            XDDebug.Log("OnUnityAdsShowComplete : " + adUnitId + " : "+showCompletionState);
+            OnADClose?.Invoke();
             if (adUnitId.Equals(GetUnitId()) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
             {
               
@@ -63,6 +65,7 @@ namespace XD.Scripts.RV.ADS
                 // Load another ad:
                 Advertisement.Load(GetUnitId(), this);
             }
+            
         }
      
         // Implement Load and Show Listener error callbacks:

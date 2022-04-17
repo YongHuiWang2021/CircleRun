@@ -38,6 +38,7 @@ namespace XD.Scripts.RV
 
         protected void InitADS()
         {
+            XDDebug.Log("InitADS");
             UnityADSManager.Instance.Init(() => { LoadADS(ADSType.Unity);});
         }
 
