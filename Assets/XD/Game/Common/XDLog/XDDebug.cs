@@ -96,7 +96,7 @@ namespace XD.XDLog
     
         private static string mLogPath = "";
        
-        private static StringBuilder mLog = new StringBuilder();
+        private static StringBuilder mLog = new StringBuilder("LOG:\n");
        
     
         public static void SaveLog()
@@ -136,7 +136,7 @@ namespace XD.XDLog
             Debug.Log(string.Format("{0}\n{1}" , str2 , systemInfo));
         }
     
-        public StringBuilder LogData
+        public static StringBuilder LogData
         {
             get { return mLog; }
         }

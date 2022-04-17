@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName ="SystemParam",menuName = ("XD/AssetsData/ADSSystemData"))]
+//[CreateAssetMenu(fileName ="ADSSystemData",menuName = ("XD/AssetsData/ADSSystemData"))]
 public class ADSSystemData :    ScriptableObject
 {
     [SerializeField] private int _UnityADSAndroidGameID;

@@ -83,10 +83,10 @@ private bool ShowGUI = true;
 		
 			Application.Quit();
 		}
-		GUILayout.Label(mlog.ToString());
+		GUILayout.Label(XDDebug.LogData.ToString());
 	}
 
-	private StringBuilder mlog = new StringBuilder("LOG:\n");
+	
 	
 	
     }
