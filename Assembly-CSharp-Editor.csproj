@@ -30,7 +30,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
@@ -41,10 +41,33 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets/GooglePlayGames/Editor/xcode/Parser.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/GPGSUtil.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/xcode/PBXProject.cs" />
      <Compile Include="Assets/Editor/ProjectBuild/ProjectBuildHelper.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/PlistBuddyHelper.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/xcode/Elements.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/xcode/Utils.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/GPGSProjectSettings.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/GPGSAndroidSetupUI.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/GPGSIOSSetupUI.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/xcode/Lexer.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/NearbyConnectionUI.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/GPGSDependencies.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/xcode/Serializer.cs" />
      <Compile Include="Assets/Editor/ProjectBuild/CrazyPreProcessBuild.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/xcode/Sections.cs" />
      <Compile Include="Assets/Editor/ProjectBuild/XcodePostProcess.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/GPGSPostBuild.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/GPGSUpgrader.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/GPGSDocsUI.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/xcode/Objects.cs" />
      <Compile Include="Assets/Editor/ProjectBuild/AndroidBuildAPK.cs" />
+     <Compile Include="Assets/GooglePlayGames/Editor/GPGSStrings.cs" />
+     <None Include="Assets/GooglePlayGames/Editor/template-GameInfo.txt" />
+     <None Include="Assets/GooglePlayGames/Editor/template-AndroidManifest.txt" />
+     <None Include="Assets/PlayServicesResolver/Editor/play-services-resolver.txt" />
+     <None Include="Assets/GooglePlayGames/Editor/template-Constants.txt" />
      <Reference Include="UnityEngine">
      <HintPath>/Applications/Unity/Hub/Editor/2021.2.19f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
      </Reference>
@@ -306,6 +329,15 @@
      <Reference Include="UnityEditor.iOS.Extensions">
      <HintPath>/Applications/Unity/Hub/Editor/2021.2.19f1c1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
      </Reference>
+     <Reference Include="log4netPlastic">
+     <HintPath>/Users/mac/Desktop/work/criclerun1/CircleRun/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.JarResolver">
+     <HintPath>/Users/mac/Desktop/work/criclerun1/CircleRun/Assets/PlayServicesResolver/Editor/Google.JarResolver.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.VersionHandler">
+     <HintPath>/Users/mac/Desktop/work/criclerun1/CircleRun/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
      <HintPath>/Users/mac/Desktop/work/criclerun1/CircleRun/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
@@ -315,8 +347,11 @@
      <Reference Include="unityplastic">
      <HintPath>/Users/mac/Desktop/work/criclerun1/CircleRun/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
      </Reference>
-     <Reference Include="log4netPlastic">
-     <HintPath>/Users/mac/Desktop/work/criclerun1/CircleRun/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+     <Reference Include="Google.IOSResolver">
+     <HintPath>/Users/mac/Desktop/work/criclerun1/CircleRun/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.PackageManager">
+     <HintPath>/Users/mac/Desktop/work/criclerun1/CircleRun/Assets/PlayServicesResolver/Editor/Google.PackageManager.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
      <HintPath>/Users/mac/Desktop/work/criclerun1/CircleRun/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
