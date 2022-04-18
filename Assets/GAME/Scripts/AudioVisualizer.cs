@@ -17,7 +17,7 @@ public class AudioVisualizer : MonoBehaviour {
 
 	[HideInInspector]
 	public float rmsValue;   // sound level - RMS
-	[HideInInspector]
+	//[HideInInspector]
 	public float dbValue;    // sound level - dB
 	[HideInInspector]
 	public float pitchValue; // sound pitch - Hz

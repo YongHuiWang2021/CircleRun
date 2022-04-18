@@ -11,6 +11,30 @@ library {
 }
 library {
   maven_library {
+    artifactId: "play-services-auth-base-10.2.0"
+  }
+  digests {
+    sha256: "\017\223\260A{\276F\364\2447\250\212\360\036\342]K\303-.\307\362\t:hQ \037B\376V:"
+  }
+}
+library {
+  maven_library {
+    artifactId: "play-services-drive-10.2.0"
+  }
+  digests {
+    sha256: "\326=\337\265v\345\300Y\256%\307\357\370\220\327\226\322\344\253:9E\2175}\316qfv\372_\363"
+  }
+}
+library {
+  maven_library {
+    artifactId: "support-v4-24.0.0"
+  }
+  digests {
+    sha256: "\266\323\231MK\336\240\357*\"\036\317\236\r\337\025\v\231\257\030\222\021\303d\030\310\036$\217?\355\231"
+  }
+}
+library {
+  maven_library {
     artifactId: "UnityAdsAndroidPlugin"
   }
   digests {
@@ -18,8 +42,66 @@ library {
   }
 }
 library {
+  maven_library {
+    artifactId: "play-services-nearby-10.2.0"
+  }
+  digests {
+    sha256: "4\263\202rtp\024\noL\027\022\223\203\221\n\311\234\375\216\357\365\260Vg\017l:\331\265\235S"
+  }
+}
+library {
+  maven_library {
+    artifactId: "play-services-base-10.2.0"
+  }
+  digests {
+    sha256: "\370\265c\300\"c\313\335R\337\217\271&\331\272\263\0319\n\255\220\a\v4\203t\303\364\363\354\256\323"
+  }
+}
+library {
+  maven_library {
+    artifactId: "play-services-games-10.2.0"
+  }
+  digests {
+    sha256: "2W\343H\025X\225\356D\331\346\2671\231Z\036i\020\0331\v\0200Mf\t\353`;\024\324\251"
+  }
+}
+library {
+  maven_library {
+    artifactId: "play-services-auth-10.2.0"
+  }
+  digests {
+    sha256: "J\322\031\365~\207\032AO\336\354I\343\240\206\267\027q*vnw:\016\265\221\250\230\v(\205\r"
+  }
+}
+library {
+  maven_library {
+    artifactId: "play-services-tasks-10.2.0"
+  }
+  digests {
+    sha256: "\350\017\303+\250}0\234\n\260\323\335\177\3033j\210\245\207\334\363\267\\\265\364s\254\232>\037\vR"
+  }
+}
+library {
+  maven_library {
+    artifactId: "play-services-basement-10.2.0"
+  }
+  digests {
+    sha256: "\272S=>Y\031\226;\376\235q@\b\300\202C\363t\230\216/\256w\b\"\265\325\240\030\324\375T"
+  }
+}
+library {
   digests {
     sha256: "J\030\313\005\r\017\327\034\f\263\362\030\352\350\305\302\"\a|5\200HQ-\365?\322w6\366%\263"
+  }
+}
+library {
+  digests {
+    sha256: "\a\220\254\355p\343\316\202\246\344f\360\324\220\214\335\236!\275\222[A\aCtA\322\001\365\225\251\b"
+  }
+}
+library {
+  digests {
+    sha256: "\256\203\252\216\246f\363\270\004x;\264\036\337\247\031k\a}sDH\033\273/\037\247\253\301\251\204\242"
   }
 }
 library_dependencies {
@@ -30,7 +112,42 @@ library_dependencies {
 library_dependencies {
   library_index: 2
 }
+library_dependencies {
+  library_index: 3
+}
+library_dependencies {
+  library_index: 4
+}
+library_dependencies {
+  library_index: 5
+}
+library_dependencies {
+  library_index: 6
+}
+library_dependencies {
+  library_index: 7
+}
+library_dependencies {
+  library_index: 8
+}
+library_dependencies {
+  library_index: 9
+}
+library_dependencies {
+  library_index: 10
+}
+library_dependencies {
+  library_index: 11
+}
+library_dependencies {
+  library_index: 12
+}
+library_dependencies {
+  library_index: 13
+}
 module_dependencies {
   module_name: "base"
-  dependency_index: 2
+  dependency_index: 11
+  dependency_index: 12
+  dependency_index: 13
 }

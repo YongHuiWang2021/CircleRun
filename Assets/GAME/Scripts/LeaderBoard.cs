@@ -1,24 +1,20 @@
-﻿using UnityEngine;
+﻿/*
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-#if UNITY_ANDROID
-using GooglePlayGames;
-using GooglePlayGames.BasicApi;
-using GooglePlayGames.BasicApi.Quests;
-#endif
+
 
 using UnityEngine.SocialPlatforms;
 
 public class LeaderBoard : MonoBehaviour {
 
-	public static LeaderBoard mInstance;
+;
 	[Header("IOS")]
 	public string iosLeaderBoard = "leaderboardID";
 
 	#if UNITY_ANDROID
 	//REFER TO :https://github.com/playgameservices/play-games-plugin-for-unity
-	private string googleLeaderBoardId = GPGSIds.leaderboard_scream_chicken_jumper;  
 	#endif
 
 	private string leaderBoardIdLocal;
@@ -208,7 +204,7 @@ public class LeaderBoard : MonoBehaviour {
 					JSONObject rewardJson = new JSONObject(reward);
 					int gems = int.Parse(rewardJson.GetField("Gems").ToString());
 					PlayerPrefs.SetInt("Gems", PlayerPrefs.GetInt("Gems", 0) + gems);
-					*/
+					#1#
 				
 					//SoundManager.Instance.PlayGameCollectible ();
 					//ScoreManager.SaveCoin  (ScoreManager.GetCoins() + 500);
@@ -218,3 +214,4 @@ public class LeaderBoard : MonoBehaviour {
 	}
 	#endif 
 }
+*/

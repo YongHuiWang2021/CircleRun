@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.XD.Client",
+  "applicationId": "at.amapps.screamchicken",
   "variantType": "BASE_APK",
   "elements": [
     {
@@ -10,8 +10,8 @@
       "apkData": {
         "type": "MAIN",
         "splits": [],
-        "versionCode": 1,
-        "versionName": "0.1",
+        "versionCode": 2,
+        "versionName": "1.0",
         "outputFile": "launcher-release.apk",
         "fullName": "release",
         "baseName": "release",

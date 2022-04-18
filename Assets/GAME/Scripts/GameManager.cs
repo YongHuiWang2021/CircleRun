@@ -105,23 +105,19 @@ public class GameManager : MonoBehaviour {
 	{
 		if (score == 5 && !unlockedAch1) {
 			PlayerPrefs.SetInt ("unlockedAch1", 1);
-			LeaderBoard.mInstance.UnlockAchievement (GPGSIds.achievement_scream_power_5);
+		
 		} 
 		else if (score == 10 && !unlockedAch2) {
 			PlayerPrefs.SetInt ("unlockedAch2", 1);
-			LeaderBoard.mInstance.UnlockAchievement (GPGSIds.achievement_scream_power_10);	
 		}
 		else if (score == 15 && !unlockedAch3) {
 			PlayerPrefs.SetInt ("unlockedAch3", 1);
-			LeaderBoard.mInstance.UnlockAchievement (GPGSIds.achievement_scream_power_15);	
 		}
 		else if (score == 20 && !unlockedAch4) {
 			PlayerPrefs.SetInt ("unlockedAch4", 1);
-			LeaderBoard.mInstance.UnlockAchievement (GPGSIds.achievement_scream_power_20);	
 		}
 		else if (score == 25 && !unlockedAch5) {
 			PlayerPrefs.SetInt ("unlockedAch5", 1);
-			LeaderBoard.mInstance.UnlockAchievement (GPGSIds.achievement_scream_power_25);	
 		}
 	}
 
