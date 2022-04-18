@@ -5,7 +5,7 @@ namespace Plugins.Common.GameConfig
 {
     public class GameConfig
     {
-        static int mUsingProductIdx = 3;
+        static int mUsingProductIdx = 0;
 
         public static int UsingProductIdx
         {

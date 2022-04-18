@@ -1,10 +1,11 @@
-#define OpenRVTest
+//#define OpenRVTest
 using System;
 using System.Collections;
 using System.Text;
 using Scripts.Common.Factory;
 using UnityEngine;
 using UnityEngine.Advertisements;
+using UnityEngine.SceneManagement;
 using XD.Scripts.RV;
 using XD.Scripts.RV.ADS;
 using XD.XDLog;
@@ -28,7 +29,7 @@ private bool ShowGUI = true;
 
 	private void Awake()
 	{
-#if XDPUBLIC
+#if OpenRVTest
 		ShowGUI = true;
 #endif
 		
@@ -59,7 +60,8 @@ private bool ShowGUI = true;
 		}
 		else
 		{
-			Initiate.Begin("Game", SystemParam.Instance.GameColor, SystemParam.Instance.Damp);
+			SceneManager.LoadScene("wallBall");
+			//Initiate.Begin("Game", SystemParam.Instance.GameColor, SystemParam.Instance.Damp);
 		}
     }
 	private GUIStyle m_tempFontStyle = new GUIStyle();

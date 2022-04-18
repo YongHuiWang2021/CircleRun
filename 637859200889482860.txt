@@ -1,0 +1,6 @@
+LOG:
+InitADS
+UnityADSManager . InitializeAds
+InitializeAds :: 4637737
+INTERNAL_ERROR  :: Invalid configuration request for gameId: 4637737
+

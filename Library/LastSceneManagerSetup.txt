@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/GAME/Scene/Main.unity
+- path: Assets/WallBall/scenes/wallBall.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

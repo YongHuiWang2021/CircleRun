@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.unity3d.player"
-    android:versionCode="2"
-    android:versionName="1.0" >
+    android:versionCode="3"
+    android:versionName="1.3" >
 
     <uses-sdk
         android:minSdkVersion="22"
@@ -12,13 +12,7 @@
     <uses-feature android:glEsVersion="0x00020000" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-    <uses-permission android:name="android.permission.BLUETOOTH" />
 
-    <uses-feature
-        android:name="android.hardware.microphone"
-        android:required="false" />
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
@@ -29,7 +23,9 @@
         android:name="android.hardware.touchscreen.multitouch.distinct"
         android:required="false" />
 
-    <application android:extractNativeLibs="true" >
+    <application
+        android:extractNativeLibs="true"
+        android:isGame="true" >
         <activity
             android:name="com.unity3d.player.UnityPlayerActivity"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
@@ -37,12 +33,13 @@
             android:hardwareAccelerated="false"
             android:launchMode="singleTask"
             android:resizeableActivity="false"
-            android:screenOrientation="sensorPortrait"
+            android:screenOrientation="portrait"
             android:theme="@style/UnityThemeSelector" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
 
             <meta-data

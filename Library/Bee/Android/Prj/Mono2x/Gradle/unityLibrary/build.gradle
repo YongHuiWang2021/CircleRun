@@ -4,16 +4,7 @@ apply plugin: 'com.android.library'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation(name: 'UnityAds', ext:'aar')
-    implementation(name: 'play-services-auth-base-10.2.0', ext:'aar')
-    implementation(name: 'play-services-drive-10.2.0', ext:'aar')
-    implementation(name: 'support-v4-24.0.0', ext:'aar')
     implementation(name: 'UnityAdsAndroidPlugin', ext:'aar')
-    implementation(name: 'play-services-nearby-10.2.0', ext:'aar')
-    implementation(name: 'play-services-base-10.2.0', ext:'aar')
-    implementation(name: 'play-services-games-10.2.0', ext:'aar')
-    implementation(name: 'play-services-auth-10.2.0', ext:'aar')
-    implementation(name: 'play-services-tasks-10.2.0', ext:'aar')
-    implementation(name: 'play-services-basement-10.2.0', ext:'aar')
 
 }
 
@@ -32,8 +23,8 @@ android {
         ndk {
             abiFilters 'armeabi-v7a'
         }
-        versionCode 2
-        versionName '1.0'
+        versionCode 3
+        versionName '1.3'
         consumerProguardFiles 'proguard-unity.txt'
     }
 
