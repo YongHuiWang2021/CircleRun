@@ -22,7 +22,7 @@ namespace XD.XDLog
         {
             XDDebugListener.Instance.InitData(() => { });
             mLogPath = GetLogPath(DateTime.Now.Ticks.ToString());
-            CreateLogFile();
+         
         }
     
     
@@ -70,28 +70,26 @@ namespace XD.XDLog
                 Directory.CreateDirectory(directory);
             }
     
-            if (File.Exists(path))
+            if (!File.Exists(path))
             {
-                File.Delete(path);
-            }
-            try
-            {
-                FileStream fs = File.Create(path);
-                fs.Close();
-                if (File.Exists(path))
+                try
                 {
-                    Debug.Log(string.Format("Create file = {0}" , path));
-                }
+                    FileStream fs = File.Create(path);
+                    fs.Close();
+                    if (File.Exists(path))
+                    {
+                        Debug.Log(string.Format("Create file = {0}" , path));
+                    }
               
-                OutputSystemInfo();
+                    OutputSystemInfo();
+                }
+                catch (System.Exception ex)
+                {
+    
+                    Debug.LogError(string.Format("can't Create file = {0},\n{1}" , path , ex));
+    
+                }
             }
-            catch (System.Exception ex)
-            {
-    
-                Debug.LogError(string.Format("can't Create file = {0},\n{1}" , path , ex));
-    
-            }
-    
         }
     
         private static string mLogPath = "";
@@ -104,15 +102,17 @@ namespace XD.XDLog
          
             if(mLog.Length <=0)
                 return;
-         
+            CreateLogFile();
             if (File.Exists(LogPath))
             {
-                var filestream = File.Open(LogPath , FileMode.Append);
+                File.AppendAllText(LogPath,mLog.ToString() + "\nLOG");
+               
+                /*var filestream = File.Open(LogPath , FileMode.Append);
                 using (StreamWriter sw = new StreamWriter(filestream))
                 {
-                    sw.WriteLine(mLog.ToString());
+                    sw.Write(mLog.ToString());
                 }
-                filestream.Close();
+                filestream.Close();*/
             }
             else
             {
@@ -133,7 +133,7 @@ namespace XD.XDLog
             + "存储容量:" + SystemInfo.systemMemorySize + " "
             + "图形设备: " + SystemInfo.graphicsDeviceName + " 供应商: " + SystemInfo.graphicsDeviceVendor
             + " 存储容量: " + SystemInfo.graphicsMemorySize + " " + SystemInfo.graphicsDeviceVersion;
-            Debug.Log(string.Format("{0}\n{1}" , str2 , systemInfo));
+            XDDebug.Log(string.Format("{0}\n{1}" , str2 , systemInfo));
         }
     
         public static StringBuilder LogData
@@ -148,7 +148,6 @@ namespace XD.XDLog
             if (mLog.MaxCapacity <= mLog.Length)
             {
                 SaveLog();
-                mLog.Clear();
             }
         }
     }

@@ -317,14 +317,36 @@ public class gameScript : ManagerBase {
 		if (GameRVManager.Instance.RVIsReady)
 		{
 			GameRVManager.Instance.ShowRV();
+			  GameRVManager.Instance.LookOver = (r) =>
+                        {
+                            Debug.Log("LookOver :" + r);
+                            if (r == 1)
+                            {
+                                RetryGame1();
+                            }
+                            else
+                            {
+                                Debug.Log("LookOver  Not Finish");
+                            }
+            
+                        };
+		}
+		else
+		{
+			RetryGame1();
 		}
 
-		setupGame ();
-		menuPanel.SetActive (true);
-		gameOverPanel.SetActive (false);
-		gameState = GameState.menu;
-		soundManager.PlayMenuMusic ();
+
 	}
+
+void RetryGame1()
+{
+	setupGame ();
+        		menuPanel.SetActive (true);
+        		gameOverPanel.SetActive (false);
+        		gameState = GameState.menu;
+        		soundManager.PlayMenuMusic ();
+}
 
 	public void quitGame() {
 		Application.Quit ();
