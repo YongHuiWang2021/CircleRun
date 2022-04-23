@@ -18,7 +18,7 @@ private bool ShowGUI = true;
 #else	 
 	    private bool ShowGUI = false;
 #endif    
-	
+		
 	
 	// Use this for initialization
 	public override void InitData(Action InitOK)
