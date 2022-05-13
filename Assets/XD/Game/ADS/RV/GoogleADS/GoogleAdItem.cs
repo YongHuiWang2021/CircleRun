@@ -1,6 +1,7 @@
 using System;
 
 using UnityEngine;
+using XD.Scripts.RV.ADS;
 
 namespace XD.Scripts.RV
 {
@@ -11,7 +12,7 @@ namespace XD.Scripts.RV
     }
 
     
-    public abstract class GoogleAdItem : IGoogleAdItem
+    public abstract class GoogleAdItem : ADSItem
     {
         public bool Loaded
         {
@@ -24,8 +25,8 @@ namespace XD.Scripts.RV
         public Action OnADClose =null;
         public Action OnADLoaded =null;
         public abstract bool IsLoaded();
-        public abstract void LoadAd();
-        public abstract void Show();
+        public abstract override void LoadAd();
+        public abstract override void Show();
     
 
         public void HandleRewardedAdLoaded(object sender, EventArgs args)

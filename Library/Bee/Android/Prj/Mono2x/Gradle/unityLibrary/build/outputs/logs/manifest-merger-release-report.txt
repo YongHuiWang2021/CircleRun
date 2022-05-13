@@ -35,6 +35,8 @@ ADDED from /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/
 		ADDED from /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:150-181
 	android:hardwareAccelerated
 		ADDED from /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:399-434
+	android:exported
+		ADDED from /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:435-458
 	android:resizeableActivity
 		ADDED from /Users/mac/Desktop/work/criclerun1/CircleRun/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/AndroidManifest.xml:4:364-398
 	android:configChanges

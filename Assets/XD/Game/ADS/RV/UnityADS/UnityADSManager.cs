@@ -1,7 +1,9 @@
 using System;
+using Plugins.Common.GameConfig;
 using Scripts.Common.Factory;
 using UnityEngine;
 using UnityEngine.Advertisements;
+using XD.Core;
 using XD.XDLog;
 
 namespace XD.Scripts.RV.ADS
@@ -18,10 +20,26 @@ namespace XD.Scripts.RV.ADS
 
         protected virtual void InitializeAds()
         {
-            XDDebug.Log("UnityADSManager . InitializeAds");
-            ADSSystemData data = Resources.Load<ADSSystemData>("ADSSystemData");
-            XDDebug.Log("InitializeAds :: "+data.UnityADSGameID.ToString());
-            Advertisement.Initialize(data.UnityADSGameID.ToString(),false,false,this);
+            int GameIDIDx = 0;
+            string GameID ="";
+            if (PlayerPrefs.HasKey(GameConfig.UnityGameidIdxKey))
+            {
+               GameIDIDx = PlayerPrefs.GetInt(GameConfig.UnityGameidIdxKey)+1;
+                if (GameIDIDx >= GameConfig.UnityADSGameIDs.Count ||GameIDIDx<0)
+                {
+                    GameIDIDx = 0;
+                }
+            }
+            else
+            {
+                PlayerPrefs.SetInt(GameConfig.UnityGameidIdxKey,GameIDIDx);
+            }
+
+            GameID = GameConfig.UnityADSGameIDs[GameIDIDx];
+            /*XDDebug.Log("UnityADSManager . InitializeAds");
+            ADSSystemData data = Resources.Load<ADSSystemData>("ADSSystemData");*/
+            XDDebug.Log("InitializeAds :: "+GameID);
+            Advertisement.Initialize(GameID,false,false,this);
         }
 
         public void OnInitializationComplete()

@@ -1,11 +1,12 @@
 
 using UnityEngine;
+using XD.Scripts.RV.ADS;
 
 namespace XD.Scripts.RV
 {
     public class GoogleInterAdItem : GoogleAdItem
     {
-        public string UnitID = "";
+        public string UnitID = "ca-app-pub-9779546067757389/9157791798";
         /*private AdRequest adr = null;
 
         private InterstitialAd mGoogleAd = null;*/
@@ -24,6 +25,16 @@ namespace XD.Scripts.RV
             /*if (mGoogleAd != null)
                 return mGoogleAd.IsLoaded();*/
             return false;
+        }
+
+        public override ADSType GetAdsType()
+        {
+            return ADSType.Google;
+        }
+
+        public override bool IsReady()
+        {
+            throw new System.NotImplementedException();
         }
 
         public override void LoadAd()

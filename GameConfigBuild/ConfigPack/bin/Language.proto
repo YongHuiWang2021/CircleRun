@@ -1,0 +1,21 @@
+syntax = "proto3"; 
+option optimize_for = LITE_RUNTIME;
+
+message Language_data {
+	{typeName}	{valName}	=	{index};
+	{typeName}	{valName}	=	{index};
+	{typeName}	{valName}	=	{index};
+}
+
+message Language_config {
+	repeated Language_data datas = 1;
+}
+message Language_data {
+	{typeName}	{valName}	=	{index};
+	{typeName}	{valName}	=	{index};
+	{typeName}	{valName}	=	{index};
+}
+
+message Language_config {
+	repeated Language_data datas = 1;
+}

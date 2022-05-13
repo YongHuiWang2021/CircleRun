@@ -24,6 +24,10 @@ namespace XD.Scripts.RV
 
         }
 
+        private void InitGoogleADS()
+        {
+        }
+
         protected void LoadADS(ADSType tType)
         {
             foreach (var item in mWaitingforPlayRV)
@@ -40,6 +44,7 @@ namespace XD.Scripts.RV
         {
             XDDebug.Log("InitADS");
             UnityADSManager.Instance.Init(() => { LoadADS(ADSType.Unity);});
+         
         }
 
         protected void InitADSItems()
@@ -61,8 +66,8 @@ namespace XD.Scripts.RV
             {
                 LookOver(ret);
             }
-            XDDebug.Log("Unity Ads LookBack");
-            Debug.Log("Unity Ads LookBack");
+          //  XDDebug.Log("Unity Ads LookBack");
+          //  Debug.Log("Unity Ads LookBack");
         }
 
         public override void OnDestroy()
@@ -113,6 +118,14 @@ namespace XD.Scripts.RV
             action.Invoke();
         }
 
+        public int PlayCount
+        {
+            get
+            {
+                return mPlayCount;
+            }
+        }
+        private int mPlayCount = 0;
         protected override void Update()
         {
             base.Update();
@@ -120,10 +133,11 @@ namespace XD.Scripts.RV
             {
                 if (RVIsReady)
                 {
+                    ++mPlayCount;
                     mLookOver = false;
                     StartCoroutine(Waite(() =>
                     {
-                        PlayAgain();
+                      //  PlayAgain();
                     }));
                 }
             }

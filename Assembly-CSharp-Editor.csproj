@@ -318,6 +318,9 @@
      <Reference Include="log4netPlastic">
      <HintPath>/Users/mac/Desktop/work/criclerun1/CircleRun/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
      </Reference>
+     <Reference Include="Google.MiniJson">
+     <HintPath>/Users/mac/Desktop/work/criclerun1/CircleRun/Assets/Plugins/Google.MiniJson.dll</HintPath>
+     </Reference>
      <Reference Include="nunit.framework">
      <HintPath>/Users/mac/Desktop/work/criclerun1/CircleRun/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
      </Reference>

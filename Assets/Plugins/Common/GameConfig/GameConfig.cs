@@ -5,7 +5,7 @@ namespace Plugins.Common.GameConfig
 {
     public class GameConfig
     {
-        static int mUsingProductIdx = 3;
+        static int mUsingProductIdx = 0;
 
         public static int UsingProductIdx
         {
@@ -22,14 +22,18 @@ namespace Plugins.Common.GameConfig
             "RunInCircle",
             "Client",
             "Client1",
-            "CircleRun"
+            "CircleRun",
+            "CircleRun1"
         };
-        public static readonly List<string> GameIDs = new List<string>()
+        public static readonly List<string> UnityADSGameIDs = new List<string>()
         {
             "4708201",
-            "4706478",
-            "4707080",
-            "4637737"
+            "4706479",
+            "4707081",
+            "4637737",
+            "4739891"
         };
+
+        public static string UnityGameidIdxKey = "UnityGameidIdx";
     }
 }

@@ -68,6 +68,7 @@
      <Compile Include="Assets/XD/Scripts/CollisionSensor.cs" />
      <Compile Include="Assets/XD/Game/Common/UnityLitJson/ParserToken.cs" />
      <Compile Include="Assets/XD/Game/Common/Utility/WaitUtil.cs" />
+     <Compile Include="Assets/XD/Game/Common/RenderGame/Game.cs" />
      <Compile Include="Assets/XD/Game/Common/UnityLitJson/JsonMapper.cs" />
      <Compile Include="Assets/XD/Game/Common/UnityLitJson/IJsonWrapper.cs" />
      <Compile Include="Assets/XD/Game/Common/UnityLitJson/Extensions.cs" />
@@ -83,15 +84,17 @@
      <Compile Include="Assets/XD/Game/Common/UnityLitJson/JsonWriter.cs" />
      <Compile Include="Assets/XD/Game/Common/Extension/EnumExtensions.cs" />
      <Compile Include="Assets/XD/Game/ADS/Data/ADSSystemData.cs" />
+     <Compile Include="Assets/XD/Language/Json/Language.cs" />
      <Compile Include="Assets/XD/Scripts/CircleMovement.cs" />
      <Compile Include="Assets/XD/Game/Common/XDLog/XDDebug.cs" />
      <Compile Include="Assets/XD/Game/ADS/RV/GoogleADS/GoogleInterAdItem.cs" />
      <Compile Include="Assets/XD/Game/ADS/RV/UnityADS/UnityADSManager.cs" />
      <Compile Include="Assets/XD/Game/Common/UnityLitJson/JsonException.cs" />
+     <Compile Include="Assets/XD/Language/Json/LanguageBind.cs" />
      <Compile Include="Assets/XD/Game/Common/XDLog/ColorHelper.cs" />
      <Compile Include="Assets/XD/Game/Common/RenderGame/ShowNetImage.cs" />
      <Compile Include="Assets/XD/Game/Common/Extension/RigidbodyExtensions.cs" />
-     <Compile Include="Assets/XD/Game/ADS/RV/GoogleADS/GoogleADS.cs" />
+     <Compile Include="Assets/XD/Game/ADS/RV/GoogleADS/GoogleADSManager.cs" />
      <Compile Include="Assets/XD/Game/Common/UnityLitJson/JsonAttribute.cs" />
      <Compile Include="Assets/XD/Game/Common/Utility/RigidbodyUtil.cs" />
      <Compile Include="Assets/XD/Scripts/CameraController.cs" />
@@ -107,6 +110,7 @@
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
+     <None Include="Assets/XD/Language/Json/Language.json" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
@@ -358,6 +362,9 @@
      </Reference>
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>/Applications/Unity/Hub/Editor/2021.2.19f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.MiniJson">
+     <HintPath>/Users/mac/Desktop/work/criclerun1/CircleRun/Assets/Plugins/Google.MiniJson.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2021.2.19f1c1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

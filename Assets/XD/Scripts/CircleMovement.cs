@@ -2,8 +2,12 @@ using UnityEngine;
 using System.Collections;
 using TMPro;
 using UnityEngine.UI;
-public class CircleMovement : MonoBehaviour {
-    
+public class CircleMovement : MonoBehaviour
+{
+
+    [SerializeField] private SpriteRenderer _Lift, _Right;
+
+    [SerializeField] private Animator _Animator;
     //Challenge Generator
     public ChallengeGenerator myGenerator;
     //End Panel to show score
@@ -223,7 +227,9 @@ public class CircleMovement : MonoBehaviour {
     
         myRigidbody.gravityScale = 1.0f;
         myRigidbody.velocity = new Vector2(0.0f, (mOverTYpe ==0?-jumpForce:jumpForce )*1.8f);
-    
+        _Lift.color = new Color(1, 1, 1, 1);
+        _Right.color = new Color(1, 1, 1, 1);
+        _Animator.enabled = false;
         EndPanel.SetActive(false);
         Startanel.SetActive(false);
     }

@@ -1,4 +1,4 @@
-#define XDPUBLIC
+
 using System;
 using UnityEngine;
 using System.Collections;

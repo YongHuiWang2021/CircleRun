@@ -1,4 +1,4 @@
-#define OpenRVTest
+//#define OpenRVTest
 using System;
 using System.Collections;
 using System.Text;
@@ -13,6 +13,7 @@ namespace XD.Scripts
 {
     public class MainGame : SingletonMonoBehaviour<MainGame>
     {
+	    
 #if OpenRVTest
 private bool ShowGUI = true;
 #else	 
@@ -28,19 +29,17 @@ private bool ShowGUI = true;
 
 	private void Awake()
 	{
-#if XDPUBLIC
-		ShowGUI = true;
-#endif
+
 		
 		XDDebug.Init();
 		Screen.orientation = ScreenOrientation.Portrait;
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
-		m_tempFontStyle.normal.textColor = Color.red;
+		/*m_tempFontStyle.normal.textColor = Color.red;
 		m_tempFontStyle2.normal.textColor = Color.green;
 		m_tempFontStyle.fontSize = 20;
 		m_tempFontStyle2.fontSize = 20;
 		m_tempFontStyle3.normal.textColor = Color.white;
-		m_tempFontStyle3.fontSize = 20;
+		m_tempFontStyle3.fontSize = 20;*/
 		StartCoroutine(StartGame());
 	}
 
@@ -62,6 +61,7 @@ private bool ShowGUI = true;
 			Initiate.Begin("Game", SystemParam.Instance.GameColor, SystemParam.Instance.Damp);
 		}
     }
+	/*
 	private GUIStyle m_tempFontStyle = new GUIStyle();
 	private GUIStyle m_tempFontStyle2 = new GUIStyle();
 	private GUIStyle m_tempFontStyle3 = new GUIStyle();
@@ -85,6 +85,7 @@ private bool ShowGUI = true;
 		}
 		GUILayout.Label(XDDebug.LogData.ToString());
 	}
+	*/
 
 	
 	

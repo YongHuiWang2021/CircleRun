@@ -2,13 +2,14 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ADSSystemData
-    - CameraController
     - ChallengeGenerator
     - ChallengeInfo
     - CircleMovement
     - CollisionSensor
+    - Game
     - InitGame
     - MenuController
+    - XD.Game.CameraController
     - XD.Scripts.SystemParam
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.RiderScriptEditorData
@@ -100,35 +101,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1630}
+      Script: {instanceID: 1638}
     - Class: 114
-      Script: {instanceID: 1884}
+      Script: {instanceID: 1892}
     - Class: 114
-      Script: {instanceID: 1910}
+      Script: {instanceID: 1918}
     - Class: 114
-      Script: {instanceID: 2244}
+      Script: {instanceID: 2254}
     - Class: 114
-      Script: {instanceID: 2586}
+      Script: {instanceID: 2596}
     - Class: 114
-      Script: {instanceID: 2716}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2740}
+      Script: {instanceID: 2750}
     - Class: 114
-      Script: {instanceID: 2770}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 2858}
+      Script: {instanceID: 2870}
     - Class: 114
-      Script: {instanceID: 2916}
+      Script: {instanceID: 2930}
     - Class: 114
-      Script: {instanceID: 3114}
+      Script: {instanceID: 3128}
     - Class: 114
-      Script: {instanceID: 3130}
+      Script: {instanceID: 3144}
     - Class: 114
-      Script: {instanceID: 3218}
+      Script: {instanceID: 3232}
     - Class: 114
-      Script: {instanceID: 4074}
+      Script: {instanceID: 4088}
     - Class: 114
-      Script: {instanceID: 4442}
+      Script: {instanceID: 4458}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -175,31 +176,37 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1834}
+      Script: {instanceID: 1638}
     - Class: 114
-      Script: {instanceID: 1910}
+      Script: {instanceID: 1842}
     - Class: 114
-      Script: {instanceID: 2234}
+      Script: {instanceID: 1918}
     - Class: 114
-      Script: {instanceID: 2586}
+      Script: {instanceID: 2244}
     - Class: 114
-      Script: {instanceID: 2684}
+      Script: {instanceID: 2596}
     - Class: 114
-      Script: {instanceID: 2716}
+      Script: {instanceID: 2694}
     - Class: 114
-      Script: {instanceID: 2740}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2770}
+      Script: {instanceID: 2750}
     - Class: 114
-      Script: {instanceID: 2916}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 3114}
+      Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 4334}
+      Script: {instanceID: 2930}
     - Class: 114
-      Script: {instanceID: 4640}
+      Script: {instanceID: 3128}
     - Class: 114
-      Script: {instanceID: 20412}
+      Script: {instanceID: 3232}
+    - Class: 114
+      Script: {instanceID: 3992}
+    - Class: 114
+      Script: {instanceID: 4350}
+    - Class: 114
+      Script: {instanceID: 4656}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -317,6 +324,12 @@ ScriptsOnlyBuild:
     className: PanelEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: XD.XDLog
+    className: XDDebugListener
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -429,6 +442,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.Advertisements.dll
     namespaceName: UnityEngine.Advertisements
     className: Placeholder
+  - hash:
+      serializedVersion: 2
+      Hash: 626516baeb3eaa3ec3db15c0dc010976
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Game
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -635,6 +654,12 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
+      Hash: e4efb66fb01d551a46b32170e91c9d95
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ADSSystemData
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -704,7 +729,7 @@ ScriptsOnlyBuild:
       Hash: 439ec8c90bfd39a39cc646b65693781a
     assemblyName: Assembly-CSharp.dll
     namespaceName: XD.Scripts.RV
-    className: GoogleADS
+    className: GoogleADSManager
   - hash:
       serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
@@ -721,7 +746,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 8e10c9e49afbb2805bc1d32ca18c06fb
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: XD.Game
     className: CameraController
   - hash:
       serializedVersion: 2
@@ -771,20 +796,8 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: XD.XDLog
-    className: XDDebugListener
-  - hash:
-      serializedVersion: 2
-      Hash: 2e7978a48ce0d6002d7351c7d3b72a70
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ADSSystemData
   platform: 13
   scenePathNames:
   - Assets/XD/Scenes/Start.unity
   - Assets/XD/Scenes/Game.unity
-  playerPath: /Users/mac/Desktop/work/criclerun1/CircleRun/AndroidPackage/CircleRun_4_16_23_12_4637737.apk
+  playerPath: /Users/mac/Desktop/work/criclerun1/CircleRun/AndroidPackage/RunInCircle_5_6_7_4_4708201.apk

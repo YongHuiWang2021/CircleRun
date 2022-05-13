@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f540c0fb87742008de038713615187, type: 3}
   m_Name: ADSSystemData
   m_EditorClassIdentifier: 
-  _UnityADSAndroidGameID: 4637737
+  _UnityADSAndroidGameID: 4708201
   _UnityADSIOSGameID: 4637736
+  _PlayerColor: {r: 0.6497038, g: 0.990566, b: 0.06074228, a: 0}
+  _ExitColor: {r: 0.9433962, g: 0.11124954, b: 0.11124954, a: 0}
+  _Tag: 1

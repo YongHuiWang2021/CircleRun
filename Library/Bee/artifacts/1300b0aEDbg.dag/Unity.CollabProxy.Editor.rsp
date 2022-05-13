@@ -417,6 +417,7 @@
 -r:"/Users/mac/Desktop/work/criclerun1/CircleRun/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
 -r:"/Users/mac/Desktop/work/criclerun1/CircleRun/Library/PackageCache/com.unity.collab-proxy@1.15.15/Lib/Editor/PlasticSCM/unityplastic.dll"
 -r:"/Users/mac/Desktop/work/criclerun1/CircleRun/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"Assets/Plugins/Google.MiniJson.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.Services.Core.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEditor.TestRunner.ref.dll"

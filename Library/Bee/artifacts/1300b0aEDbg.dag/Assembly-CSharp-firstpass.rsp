@@ -404,6 +404,7 @@
 -r:"/Applications/Unity/Hub/Editor/2021.2.19f1c1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.2.19f1c1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.2.19f1c1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Serialization.dll"
+-r:"Assets/Plugins/Google.MiniJson.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.TextMeshPro.Editor.ref.dll"
